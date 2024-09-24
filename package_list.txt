@@ -230,6 +230,7 @@ gettext
 ghostscript
 giflib
 git
+github-cli
 glew
 glew1.10
 glib-networking
