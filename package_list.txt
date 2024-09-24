@@ -66,6 +66,7 @@ bolt
 boost-libs
 botan
 botan2
+btop
 breeze
 breeze-icons
 bridge-utils
@@ -244,6 +245,7 @@ gnupg
 gnustep-base
 gnutls
 gobject-introspection-runtime
+google-chrome
 goverlay-git
 gperftools
 gpgme
