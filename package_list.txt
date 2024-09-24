@@ -1568,7 +1568,6 @@ tevent
 texinfo
 thin-provisioning-tools
 threadweaver
-thunderbird
 timidity++
 tpm2-tss
 traceroute
