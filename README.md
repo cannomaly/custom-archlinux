@@ -1,8 +1,7 @@
-<span style="font-size:15px;"></span>
+<span style="font-size:15px;">
 - I'm a Linux and Windows user.
 - Currently running [Arch-Linux](https://https://archlinux.org/) with [Hyprland](https://hyprland.org/)
-
-# Welcome to My GitHub Profile 👋
+</span>
 
 <p align="center">
   <span style="font-size:22px;">This is large text for introducing myself.</span>
