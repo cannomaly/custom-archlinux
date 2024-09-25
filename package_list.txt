@@ -1273,6 +1273,8 @@ python-netifaces
 python-numpy
 python-ordered-set
 python-orjson
+python-pip
+python-pipx
 python-packaging
 python-pathvalidate
 python-pefile
@@ -1298,6 +1300,7 @@ python-typeguard
 python-typing_extensions
 python-urllib3
 python-validate-pyproject
+python-virtualenv
 python-vdf
 python-wxpython
 python-yaml
