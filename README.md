@@ -1,2 +1,8 @@
-install_packages.sh script will also install the chaotic-aur repo and modify /etc/pacman.conf with the needed changes.
-install_packages.sh includes add_chaotic-aur.sh so they don't have to be ran seperately or incase chaotic-aur isn't added.
+-> About me
+
+I'm a Linux and Windows user. [Arch-Linux](https://https://archlinux.org/) with [Hyprland](https://hyprland.org/)
+
+-> Social
+
+Discord: @chompertf
+IG: https://www.instagram.com/mpfrenchiesllc/
