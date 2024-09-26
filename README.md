@@ -1,4 +1,4 @@
-# Cheat Engine Memory Scanner and Structure Dissector
+# -- Unreal Engine Debugger Script for Cheat Engine --
 
 This Lua script is designed to be run within **Cheat Engine**. It performs heuristic memory scanning to locate player coordinates (X, Y, Z) in a target process (such as a game or application) and dissects structures, such as position and health, for multiple entities.
 
