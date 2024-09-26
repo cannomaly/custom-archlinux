@@ -43,19 +43,12 @@ This Lua script is designed to be run within **Cheat Engine**. It performs heuri
 1. You will be prompted to input the player's **X**, **Y**, and **Z** coordinates.
 2. Enter the coordinates when prompted. If invalid input is provided (non-numeric), the script will ask you to re-enter the value.
 
-### Step 6: Heuristic Memory Scan
+### Step 6: Pointer Scan and Dissection
 
-1. The script will perform a memory scan for the player's coordinates in the process.
-2. If successful, it will display the memory addresses for the X, Y, and Z coordinates in Cheat Engine’s Lua console.
-
-### Step 7: Structure Dissection
-
-1. The script will attempt to dissect the memory structure at specific addresses (e.g., 0x10000000, 0x10001000, 0x10002000).
-2. These addresses should be replaced with real addresses relevant to the game/application you're scanning.
-3. The dissected values (positions and health) will be printed in the Lua console.
+1. The script will perform a **pointer scan** to dynamically find the memory addresses for the player's position (X, Y, Z) in the process.
+2. If successful, the script will print the memory addresses and dissect the player's position and health values.
 
 ## Example Output:
-
 ```lua
 Process ID: 12345 is attached.
 Starting heuristic scan for coordinates: X=100, Y=50, Z=200
@@ -68,7 +61,6 @@ Position X: 100.0
 Position Y: 50.0
 Position Z: 200.0
 Health: 100.0
-
 
 ### Key Components:
  **Usage Instructions**: Detailed steps on how to use the Lua script within Cheat Engine, including how to attach to a process, input coordinates, and run a memory scan.
