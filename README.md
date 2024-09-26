@@ -46,6 +46,8 @@ This Lua script is designed to work within **Cheat Engine**. It performs heurist
    - The script will dissect the memory at specified addresses (sample addresses are provided in the script), printing the dissected structure information (position and health) for each entity.
 
 ### Example Output:
+
+```lua
 Process ID: 12345 is attached.
 Starting heuristic scan for coordinates: X=100, Y=50, Z=200
 X coordinate found at address: 0xABCDEF00
