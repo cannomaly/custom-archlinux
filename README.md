@@ -71,6 +71,6 @@ Health: 100.0
 
 
 ### Key Components:
-- **Usage Instructions**: Detailed steps on how to use the Lua script within Cheat Engine, including how to attach to a process, input coordinates, and run a memory scan.
-- **Example Output**: A sample of what the console output looks like when the script successfully locates player coordinates and performs structure dissection.
-- **Notes and Troubleshooting**: Suggestions for handling possible errors or issues during the scanning process.
+ **Usage Instructions**: Detailed steps on how to use the Lua script within Cheat Engine, including how to attach to a process, input coordinates, and run a memory scan.
+ **Example Output**: A sample of what the console output looks like when the script successfully locates player coordinates and performs structure dissection.
+ **Notes and Troubleshooting**: Suggestions for handling possible errors or issues during the scanning process.
