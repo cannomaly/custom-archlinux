@@ -1,53 +1,51 @@
-### UE_Debugger.Lua instructions.
+# Cheat Engine Memory Scanner for Coordinates
 
-This Lua script is designed to run within Cheat Engine. It scans memory for specific player coordinates (X, Y, Z), assuming they are stored as floating-point values in the target process (e.g., a game or application). It uses Cheat Engine's memory scanning API to find the memory addresses associated with these coordinates.
+This Lua script is designed to work within **Cheat Engine**. It performs heuristic memory scanning to locate the memory addresses of player coordinates (X, Y, Z) in a target process (such as a game or application). This script assumes that the coordinates are stored as floating-point values in memory.
 
-Key Features:
-Process Attachment Check (checkProcessAttached):
+## Features
 
-The script verifies whether Cheat Engine is attached to a process. If no process is attached, it prints an error message and returns false. If a process is attached, it confirms the process ID.
-Coordinate Input (promptForCoordinates):
+- **Process Attachment Check**: Ensures that Cheat Engine is attached to a target process before scanning memory.
+- **User Input for Coordinates**: Prompts the user for player X, Y, and Z coordinates.
+- **Heuristic Memory Scan**: Performs an exact memory scan for the floating-point coordinates provided by the user.
+- **Console Output**: Displays the results of the scan, including the memory addresses where the coordinates were found.
 
-The script prompts the user to enter the player's X, Y, and Z coordinates via Cheat Engine’s inputQuery function. It ensures valid input, and if invalid input (non-numeric values) is provided, it prompts again recursively.
-Memory Scanning (scanMemoryForValue and scanCoordinate):
+## Usage
 
-The script performs a heuristic scan for the player coordinates. It looks for the exact floating-point value entered by the user in the process's memory.
-The scanCoordinate function is used to find a specific coordinate (X, Y, or Z) and prints whether the value was found.
-If successful, it returns the memory address where the coordinate is stored.
-Heuristic Scan for Coordinates (heuristicScanForCoordinates):
+### Prerequisites
+- Download and install **Cheat Engine**: [Cheat Engine Official Website](https://cheatengine.org/)
+- A running process (e.g., a game) whose memory can be scanned by Cheat Engine.
 
-This function ties everything together, scanning memory for the X, Y, and Z coordinates and returning their memory addresses (or nil if they are not found).
-How to Use This Script:
-Install Cheat Engine:
+### How to Use
 
-If you haven't already, download and install Cheat Engine from Cheat Engine's official website.
-Launch Cheat Engine:
+1. **Launch Cheat Engine**:
+   - Open **Cheat Engine** on your computer.
 
-Open Cheat Engine on your computer.
-Attach Cheat Engine to the Target Process:
+2. **Attach Cheat Engine to a Process**:
+   - Click the **computer icon** in the top-left corner.
+   - Find and select the process (e.g., your game) from the list.
+   - Click **Open** to attach Cheat Engine to the process.
 
-Start the game or application you want to scan.
-In Cheat Engine, click on the computer icon in the top-left corner.
-Find and select the game/application's process from the Process List.
-Click Open to attach Cheat Engine to the process.
-Open the Lua Script Window:
+3. **Open the Lua Script Window**:
+   - In the top menu, click **Table** → **Show Cheat Table Lua Script**.
 
-In Cheat Engine, click on the Table menu at the top.
-Select Show Cheat Table Lua Script from the dropdown menu. This opens the Lua script editor.
-Paste the Lua Script:
+4. **Paste the Lua Script**:
+   - Copy the Lua script from this repository and paste it into the Lua script window in Cheat Engine.
 
-Copy the Lua script provided above and paste it into the Lua script window.
-Run the Script:
+5. **Run the Script**:
+   - After pasting the script, click the **Execute Script** button at the bottom of the Lua window.
 
-After pasting the script, click the Execute Script button located at the bottom of the Lua script window.
-Input Coordinates:
+6. **Input Player Coordinates**:
+   - The script will prompt you for the player's X, Y, and Z coordinates. Enter the coordinates based on the values you believe correspond to the player's position in the game.
 
-The script will prompt you to enter the player's X, Y, and Z coordinates. Enter the values you believe represent the player’s position in the game. The script will validate your input and ask for valid numbers if necessary.
-Heuristic Memory Scan:
+7. **Heuristic Memory Scan**:
+   - Once the coordinates are entered, the script will perform a memory scan to locate the addresses of the X, Y, and Z coordinates in memory.
+   - The memory addresses, if found, will be displayed in Cheat Engine’s Lua console.
 
-Once you’ve entered the coordinates, the script will perform a memory scan to find the exact floating-point values corresponding to the X, Y, and Z positions in the attached process.
-If successful, the script will print the memory addresses for the coordinates found in Cheat Engine’s Lua Console.
-Troubleshooting:
+### Example Output:
 
-If the script doesn’t find the coordinates, it might be because the values have changed or are not stored as floating-point numbers in the memory. You can try scanning with different coordinate values or tweak Cheat Engine’s settings to better suit the target process.
-
+```lua
+Process ID: 12345 is attached.
+Starting heuristic scan for coordinates: X=100, Y=50, Z=200
+X coordinate found at address: 0xABCDEF00
+Y coordinate found at address: 0xABCDEF04
+Z coordinate found at address: 0xABCDEF08
