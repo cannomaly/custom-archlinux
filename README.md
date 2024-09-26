@@ -23,6 +23,9 @@ This project provides a Lua script for dynamically scanning, dissecting, and ext
 
 1. Clone this repository to your local machine by downloading or pulling it from your GitHub repository.
 
+```bash
+git clone https://github.com/cannomaly/UE_Debugger.git
+```
 2. Install Cheat Engine:
 
    - Download Cheat Engine from the [official website](https://www.cheatengine.org/).
@@ -76,3 +79,4 @@ Dissected structure at address: 0x12345678
 Position: X=120.0
 Health: 100.0
 Inventory Item ID: 103
+```
