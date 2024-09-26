@@ -1,5 +1,4 @@
-# Cheat Engine Memory Scanner for Coordinates
-
+# UE_Debugger
 This Lua script is designed to work within **Cheat Engine**. It performs heuristic memory scanning to locate the memory addresses of player coordinates (X, Y, Z) in a target process (such as a game or application). This script assumes that the coordinates are stored as floating-point values in memory.
 
 ## Features
